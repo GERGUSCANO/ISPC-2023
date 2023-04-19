@@ -1,0 +1,20 @@
+Sprint 0
+
+- propuesta de proyectos.
+- designacion del scrum master y el o la suplente (German G. Cano/Romina S. Haag).
+- realizacion del product backlog.
+- diseño o maquetacion mediante figma de las primeras 3 paginas (inicio, registro; recuperacion)=>provisioria.
+- diseño de la base de datos (provisioria).
+- instructivo para trabajar con github. 
+- crear el repositorio 
+- crear los branch de Frontend, backend; documentacion; integrantes(uso para desarrollar sus portafolios de presentacion)
+- se agrego a cada branch la carpeta de AR_Salud a modo backup y para que cada equipo trabaje sobre el
+
+Sprint 1
+
+- Inicio de la codificacion en html y css
+- dailys con los manager de cada grupo para ver el desarrollo y avance obtenido => Rendimiento Normal  
+- Viernes 07 plazo para la primera presentacion de como esta abanzando el gpo y para valoracion.
+
+Sprint 2
+
