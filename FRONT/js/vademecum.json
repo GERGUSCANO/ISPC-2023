@@ -1,0 +1,1137 @@
+
+[
+    "__ANSIOLITICOS__",
+    {
+        "nombre_comercial": "CLONAZEPAM",
+        "concentracion": "0.5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "CLONAZEPAM",
+        "concentracion": "2 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "ALPRAZOLAM",
+        "concentracion": "0.5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "ALPRAZOLAM",
+        "concentracion": "1 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "DIAZEPAM",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "DIAZEPAM",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "LORAZEPAM",
+        "concentracion": "2.5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "LORAZEPAM",
+        "concentracion": "4 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    "__Hipnóticos NO benzodiazepínicos__",
+    {
+        "nombre_comercial": "ZOLPIDEM",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    "__Anticonvulsivantes, antiepilépticos, estabilizadores del ánimo__",
+    {
+        "nombre_comercial": "CARBAMAZEPINA",
+        "concentracion": "200 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "CARBAMAZEPINA",
+        "concentracion": "400 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Divalproato de sodio",
+        "concentracion": "250 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Divalproato de sodio",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Pregabalina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Pregabalina",
+        "concentracion": "75 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Pregabalina",
+        "concentracion": "150 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Gabapentin",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "CAPSULAS O COMPRIMIDO RECUBIERTOS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Gabapentin",
+        "concentracion": "300 MG",
+        "forma_farmaceutica": "CAPSULAS O COMPRIMIDO RECUBIERTOS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Topiramato",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "CAPSULAS O COMPRIMIDO RECUBIERTOS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Topiramato",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "CAPSULAS O COMPRIMIDO RECUBIERTOS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Lamotrigina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Lamotrigina",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Lamotrigina",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "COMPRIMIDO RECUBIERTOS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Fenitoína sódica",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "CAPSULAS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Carbonato de litio",
+        "concentracion": "300 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+"__Antidepresivos__",
+    "__Antidepresivos tricíclicos__",
+
+    {
+        "nombre_comercial": "Imipramina",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Imipramina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Amitriptilina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Amitriptilina",
+        "concentracion": "75 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clorimipramina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clorimipramina",
+        "concentracion": "75 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+    "__Inhibidores selectivos de la recaptación de serotonina (ISRS)__",
+    
+    {
+        "nombre_comercial": "Citalopram",
+        "concentracion": "20 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Sertralina",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Sertralina",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Paroxetina",
+        "concentracion": "20 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Fluoxetina",
+        "concentracion": "20 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+    "__Inhibidores selectivos de la recaptación de serotonina y noradrenalina (ISRSNA)",
+
+    {
+        "nombre_comercial": "Venlafaxina",
+        "concentracion": "75 MG",
+        "forma_farmaceutica": "COMPRIMIDO O CAPSULAS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Venlafaxina",
+        "concentracion": "150 MG",
+        "forma_farmaceutica": "COMPRIMIDO O CAPSULAS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Desvenlafaxina",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "COMPRIMIDO DE LIBERACION PROLONGADA",
+        "presentacion": ""
+    },
+
+"__Inhibidores selectivos de la recaptación de dopamina y noradrenalina__",
+
+    {
+        "nombre_comercial": "Bupropión",
+        "concentracion": "150 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Bloqueante de los receptores Alfa2 y de serotonina 2A y 3__",
+
+    {
+        "nombre_comercial": "Mirtazapina",
+        "concentracion": "30 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Bloqueante de los receptores Alfa1-2 y de serotonina 2A y 3__",
+
+    {
+        "nombre_comercial": "Mianserina",
+        "concentracion": "30 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Antipsicóticos__",
+    "__Antipsicóticos típicos__",
+        "__De alta potencia o incisivos__",
+
+    {
+        "nombre_comercial": "Haloperidol",
+        "concentracion": "5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Haloperidol",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Haloperidol",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Haloperidol",
+        "concentracion": "10 MG/ML",
+        "forma_farmaceutica": "GOTAS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Trifluoperazina",
+        "concentracion": "5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Trifluoperazina",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Haloperidol decanoato",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "AMPOLLA DE 1 ML",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Haloperidol decanoato",
+        "concentracion": "150 MG",
+        "forma_farmaceutica": "AMPOLLA DE 3 ML",
+        "presentacion": ""
+    },
+
+"__De baja potencia o sedativos__",
+
+    {
+        "nombre_comercial": "Levomepromazina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Levomepromazina",
+        "concentracion": "2 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Levomepromazina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clotiapina",
+        "concentracion": "40 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clorpromazina",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clorimipramina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Tioridazina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Tioridazina",
+        "concentracion": "200 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Antipsicóticos atípicos__",
+
+    {
+        "nombre_comercial": "Risperidona",
+        "concentracion": "0.25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Risperidona",
+        "concentracion": "0.5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Risperidona",
+        "concentracion": "1 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Risperidona",
+        "concentracion": "2 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Olanzapina",
+        "concentracion": "2.5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Olanzapina",
+        "concentracion": "5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Olanzapina",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Quetiapina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Quetiapina",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Quetiapina",
+        "concentracion": "200 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Aripiprazol",
+        "concentracion": "5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Aripiprazol",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ziprasidona",
+        "concentracion": "40 MG",
+        "forma_farmaceutica": "CAPSULAS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ziprasidona",
+        "concentracion": "80 MG",
+        "forma_farmaceutica": "CAPSULAS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clozapina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clozapina",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Anticolinérgicos o antiparkinsonianos__",
+
+    {
+        "nombre_comercial": "Biperidenoclorhidrato",
+        "concentracion": "2 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Antihistamínicos (con efecto sedante)__",	
+
+    {
+        "nombre_comercial": "Prometazina",
+        "concentracion": "25 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Prometazina",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+
+"__MEDICACION CLINICA__",
+    "__Antipiréticos, analgésicos, antiinflamatorios__",
+
+    {
+        "nombre_comercial": "Ácido acetil salicílico",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Diclofenac",
+        "concentracion": "75 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Diclofenac potásico",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Diclofenac + Pridinol",
+        "concentracion": "50 MG + 4 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ergotamina + Ibuprofeno + Cafeína",
+        "concentracion": "1 mg + 400 mg +100 mg",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ibuprofeno",
+        "concentracion": "400 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ketorolac trometamina",
+        "concentracion": "20 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Paracetamol",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ibuprofeno 2 %",
+        "concentracion": "",
+        "forma_farmaceutica": "",
+        "presentacion": "SUSPENCIÓN"
+    },
+    {
+        "nombre_comercial": "Diclofenac dietilamina",
+        "concentracion": "1.16%",
+        "forma_farmaceutica": "CREMA",
+        "presentacion": ""
+    },
+
+"__Antiácidos__",
+
+    {
+        "nombre_comercial": "Ranitidina",
+        "concentracion": "150 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ranitidina",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Hidróxido de aluminio+ Hidróxido de magnesio + Simeticona",
+        "concentracion": "400 MG + 400 MG +30 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Omeprazol",
+        "concentracion": "20 MG",
+        "forma_farmaceutica": "CAPSULAS",
+        "presentacion": ""
+    },
+
+"__Antieméticos, antivertiginosos__",
+    
+    {
+        "nombre_comercial": "Metoclopramida",
+        "concentracion": "5 MG/ML",
+        "forma_farmaceutica": "GOTAS",
+        "presentacion": ""
+    },    {
+        "nombre_comercial": "Metoclopramida",
+        "concentracion": "10 MG/2 ML",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    
+    "__Antiflatulentos__",
+
+    {
+        "nombre_comercial": "Simeticona",
+        "concentracion": "200 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Antidiarreicos__",
+
+    {
+        "nombre_comercial": "Loperamida",
+        "concentracion": "2 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Hidroxido de bismuto + pectina",
+        "concentracion": "3 GR + 750 MG/ 100 ML",
+        "forma_farmaceutica": "",
+        "presentacion": "SUSPENSION"
+    },
+
+"__Antiespasmódicos__",
+    
+    {
+        "nombre_comercial": "Hioscina butilbromuro",
+        "concentracion": "20 MG/ML",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Hioscina butilbromuro",
+        "concentracion": "10 MG/ML",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Propinox + lisina clonixinato",
+        "concentracion": "10/125 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Propinox + lisina clonixinato",
+        "concentracion": "15/100 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Loperamida",
+        "concentracion": "2 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Digestivos__",
+
+    {
+        "nombre_comercial": "Acido Tióctico Celulasa - Pancreatina Simeticona",
+        "concentracion": "10/10/200/100 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Laxantes, evacuantes intestinales__",
+
+    {
+        "nombre_comercial": "Vaselina líquida",
+        "concentracion": "DENSIDAD 180",
+        "forma_farmaceutica": "LIQUIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Fosfato monosódico +Fosfato disódico",
+        "concentracion": "18 GR + 8 GR /100 ML",
+        "forma_farmaceutica": "ENEMA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Lactulosa",
+        "concentracion": "65 gr /100 ml",
+        "forma_farmaceutica": "JARABE",
+        "presentacion": ""
+    },
+
+"__Antiasmáticos broncodilatadores__",
+
+    {
+        "nombre_comercial": "Salbutamol",
+        "concentracion": "5 MG/ML",
+        "forma_farmaceutica": "SOLUCION PARA NEBULIZAR",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Salbutamol",
+        "concentracion": "100MCG",
+        "forma_farmaceutica": "AEROSOL",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Budesonide",
+        "concentracion": "200 MCG",
+        "forma_farmaceutica": "AEROSOL",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Adrenalina",
+        "concentracion": "1 %",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+"__Descongestivos antigripales__",
+
+    {
+        "nombre_comercial": "Bromhexina + paracetamol+ pseudoefedrina + Cloreniramina",
+        "concentracion": "8/500/60/4 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Antihistamínicos__",
+
+    {
+        "nombre_comercial": "Difenhidramina",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Loratadina",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Expectorantes__",
+
+    {
+        "nombre_comercial": "Bromhexina",
+        "concentracion": "80 MG/100 ML",
+        "forma_farmaceutica": "JARABE",
+        "presentacion": ""
+    },
+
+"__Corticoides__",
+
+    {
+        "nombre_comercial": "Betametasona acetato + Betametasona fosfato + Disodico",
+        "concentracion": "3 MG+ 3,9 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Dexametasona",
+        "concentracion": "4 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Hidrocortisona",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+
+"__Hipoglucemiantes orales__",
+
+    {
+        "nombre_comercial": "Metformina",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Glibenclamida",
+        "concentracion": "5 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Hipotensores__",
+
+    {
+        "nombre_comercial": "Enalapril",
+        "concentracion": "10 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Losartan",
+        "concentracion": "50 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Hipolipemiantes__",
+
+    {
+        "nombre_comercial": "Simvastatina",
+        "concentracion": "20 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Antiinfecciosos locales__",
+
+    {
+        "nombre_comercial": "Metronidazol",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "OVULO",
+        "presentacion": ""
+    },
+        {
+        "nombre_comercial": "Miconazol + Neomicina + Centella Asiatica + Polimixina",
+        "concentracion": "100/45/15/5 MG",
+        "forma_farmaceutica": "OVULO",
+        "presentacion": ""
+    },
+        {
+        "nombre_comercial": "Nistatina",
+        "concentracion": "100.000 UI",
+        "forma_farmaceutica": "SOLUCION",
+        "presentacion": ""
+    },
+
+"__Diuréticos__",    
+    {
+        "nombre_comercial": "Furosemida",
+        "concentracion": "40 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Furosemida",
+        "concentracion": "20 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Espironolactona",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    
+"__Hormonoterapia__",    
+    
+    {
+        "nombre_comercial": "Levotiroxina",
+        "concentracion": "50 MCG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Antibióticos, antimicóticos, antivirales__",
+
+    {
+        "nombre_comercial": "Aciclovir",
+        "concentracion": "800 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Amoxicilina",
+        "concentracion": "875 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Amoxicilina + Ácido clavulánico",
+        "concentracion": "875 MG + 125 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Azitromicina",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Cefalexina",
+        "concentracion": "1 GR",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ciprofloxacina",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Fluconazol",
+        "concentracion": "150 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Ivermectina",
+        "concentracion": "6 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Levofloxacina",
+        "concentracion": "750 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Metronidazol   ",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Trimetoprima + Sulfametoxazol",
+        "concentracion": "160 MG + 800 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Claritromicina",
+        "concentracion": "500 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Penicilina",
+        "concentracion": "2.400.000 UI",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Norfloxacina",
+        "concentracion": "400 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clindamicina",
+        "concentracion": "300 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+
+"__Inmunoterápicos y vacunas__", 
+
+    {
+        "nombre_comercial": "Toxoide tetanico + Antitoxina tetánica",
+        "concentracion": "40/500 UI",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+
+"__Nutrición, soluciones parenterales, solventes__",   
+
+    {
+        "nombre_comercial": "Polivitaminico",
+        "concentracion": "",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Tiamina",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "AMPOLLA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Citrato de magnesio",
+        "concentracion": "55 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Solucion fisiologica de cloruro de sodio",
+        "concentracion": "0,90%",
+        "forma_farmaceutica": "Sachet x 500 ml",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Solucion de dextrosa en agua",
+        "concentracion": "5%",
+        "forma_farmaceutica": "Sachet x 500 ml",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Suplemento proteinas,vitaminas, minerales",
+        "concentracion": "Neutro",
+        "forma_farmaceutica": "Lata x 350 grs",
+        "presentacion": ""
+    },
+
+"__Antianémicos__",
+
+    {
+        "nombre_comercial": "Hierro elemental + acido folico",
+        "concentracion": "80/1 MG",
+        "forma_farmaceutica": "COMPRIMIDO",
+        "presentacion": ""
+    },
+
+"__Uso oftalmológico__",
+
+    {
+        "nombre_comercial": "Dexametasona",
+        "concentracion": "1%",
+        "forma_farmaceutica": "GOTAS OFTALMOLOGICAS",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Tobramicina + Nafazolina + Dexametasona",
+        "concentracion": "0,3/0,02/0,005 %",
+        "forma_farmaceutica": "GOTAS OFTALMOLOGICAS",
+        "presentacion": ""
+    },
+
+"__Uso otológico__",    
+
+    {
+        "nombre_comercial": "Neomicina + Carbonato de  Sodio",
+        "concentracion": "0,50/10 grs",
+        "forma_farmaceutica": "GOTAS OFTALMOLOGICAS",
+        "presentacion": ""
+    },
+
+"__XXVI. Productos de uso bucofarínge__",
+
+    {
+        "nombre_comercial": "Bencidamina + Cetilpiridinio",
+        "concentracion": "150/50 MG",
+        "forma_farmaceutica": "Colutorio",
+        "presentacion": ""
+    },
+
+"__Dermatología__",
+
+    {
+        "nombre_comercial": "Betametasona",
+        "concentracion": "100 MG/100 GR",
+        "forma_farmaceutica": "CREMA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Aciclovir",
+        "concentracion": "5 GR",
+        "forma_farmaceutica": "CREMA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Gentamicina",
+        "concentracion": "100 MG",
+        "forma_farmaceutica": "CREMA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clotrimazol",
+        "concentracion": "1 GR",
+        "forma_farmaceutica": "CREMA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Permetrina",
+        "concentracion": "1%",
+        "forma_farmaceutica": "LOCION",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Sulfadiazina de plata + Vitamina A + Lidocaina",
+        "concentracion": "1gr/248.000UI/0,666g",
+        "forma_farmaceutica": "CREMA",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Alantoina + Vit A + Vit E",
+        "concentracion": "",
+        "forma_farmaceutica": "EMULSION",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Hidrocortisona + lidocaína",
+        "concentracion": "0,25/5 grs",
+        "forma_farmaceutica": "CREMA (ANTIHEMORROIDAL)",
+        "presentacion": ""
+    },
+
+"__Antisépticos, desinfectantes y anestésicos__",
+
+    {
+        "nombre_comercial": "Agua oxigenada",
+        "concentracion": "10 VOLUMENES",
+        "forma_farmaceutica": "LIQUIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Alcohol etílico",
+        "concentracion": "70%",
+        "forma_farmaceutica": "GEL",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Alcohol etílico",
+        "concentracion": "96%",
+        "forma_farmaceutica": "LIQUIDO",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Clorhexidina",
+        "concentracion": "4%",
+        "forma_farmaceutica": "Solución jabonosa",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Iodopovidona",
+        "concentracion": "10%",
+        "forma_farmaceutica": "SOLUCION",
+        "presentacion": ""
+    },
+    {
+        "nombre_comercial": "Lidocaina",
+        "concentracion": "1%",
+        "forma_farmaceutica": "Ampolla x 5 ml",
+        "presentacion": ""
+    }
+]
