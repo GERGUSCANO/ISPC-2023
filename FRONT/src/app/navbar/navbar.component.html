@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../navbar/navbar.component.css">
+    <link rel="icon" href="../logo/icon.png">
+    <title>Inicio</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/imagenes/logo/logo4.png" alt="" width="30" height="24">
+          Ar-Salud
+        </a>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <a routerLink="form-registro" class="nav-link" href="#">Registrarse |</a>
+        <a routerLink="form-login" class="nav-link" href="#">Iniciar sesion |</a>
+      </div>
+    </div>
+  </nav>
+
+</body>
