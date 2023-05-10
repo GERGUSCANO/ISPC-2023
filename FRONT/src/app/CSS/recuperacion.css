@@ -1,0 +1,79 @@
+:root{
+    --colorTexto: rgb(15, 14, 14);
+}
+
+body{
+    background-color:rgb(242, 246, 249);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+.imagen_fija{
+    background-image: url(../imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: auto;
+    padding: 30px;
+}
+.welcome{
+    text-align: center;
+}
+.texto{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 27%;
+    width: 450px;
+    height: 450px;
+    box-shadow: 0 0 6px 0 #411d3fcc;
+}
+.form {
+    text-align: center;
+    background-color:beige;
+    width: 100px;
+}
+
+.grupo{
+    position: relative;
+}
+
+input{
+    background: none;
+    color: #4a4a4a;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding: 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--colorTexto);    
+}
+
+
+label{
+    color: var(--colorTexto);
+    font-size: 16px;
+}
+
+.title{
+    margin-bottom: 25px;
+}
+
+.boton{
+    border-radius: 5%;
+}
+
+.boton:hover,
+.boton:focus{
+    background-color: #2500f7;
+    color: white;
+}   
