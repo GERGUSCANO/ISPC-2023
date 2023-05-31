@@ -9,12 +9,10 @@
 
 <p aling="center">
     <a href="https://github.com/GERGUSCANO/ISPC-2023">
-    ![]("https://drive.google.com/file/d/1NEIb_gezXd_wXehBDvPQ_a7Gyq0CMIDX/view?usp=drive_link")
+        Repositorio Ar-Salud Farmacia
     </a>
-    <h4 align="center">Teams Pampita & Co</h4>
-    
 </p>
-
+<h4 align="center">Teams Pampita & Co</h4>
 
 [Germán Gustavo Cano](https://github.com/GERGUSCANO)
 
