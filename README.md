@@ -1,13 +1,5 @@
-
-```
 <h1 align= "center"; font-family: 'Times New Roman', Times, serif;">Ar-Salud</h1>
-```
-
----
-
-```
-
-<p aling= "center">
+<p aling="center"> 
     <a href="https://www.ispc.edu.ar/"><img src="https://www.ispc.edu.ar/wp-content/uploads/2020/09/Isologotipo_ISPC_blanco-transparente-300x200.png" alt="" style="width: 150px"></a>
 </p>
 <h3 aling= "center"; font-family: 'Times New Roman', Times, serif;">Instituto Superior Politecnico de Cordoba</h3>
