@@ -9,16 +9,22 @@
 
 <p aling= "center">
     <a href="https://github.com/GERGUSCANO/ISPC-2023"><img src="https://drive.google.com/file/d/1NEIb_gezXd_wXehBDvPQ_a7Gyq0CMIDX/view?usp=drive_link" alt="" style="width: 150px;"></a>
-    <h4 aling= "center">Teams Pampita & Co</h4>
+    <h4 aling-item= "center">Teams Pampita & Co</h4>
 </p>
 
 
 [Germán Gustavo Cano](https://github.com/GERGUSCANO)
+
 [Romina Soledad Haag](https://github.com/RominaSolHaag)
+
 [Ivan Sarjanovich](https://github.com/Sarja97)
+
 [Luciano Cancinos](https://github.com/devluchoc)
+
 [Daiana Zabala](https://github.com/DZabala7)
+
 [Carlos Ferri Del Castillo](https://github.com/Carlos-Ferri-Del-Castillo)
+
 [Gisela Padilla](https://github.com/Gisel82)
 
 # Ar-Salud
