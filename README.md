@@ -15,7 +15,7 @@
 
 [Germán Gustavo Cano](https://github.com/GERGUSCANO)
 
-[Romina Soledad Haag](https://github.com/RominaSolHaag)
+[Romina Sol Haag](https://github.com/RominaSolHaag)
 
 [Ivan Sarjanovich](https://github.com/Sarja97)
 
