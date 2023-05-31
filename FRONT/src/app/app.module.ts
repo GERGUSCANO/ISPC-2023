@@ -3,12 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { FormRegistroComponent } from './form-registro/form-registro.component';
-import { FormRecuperarComponent } from './form-recuperar/form-recuperar.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { FormLoginComponent } from './form-login/form-login.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
+import { FormRegistroComponent } from './pages/form-registro/form-registro.component';
+import { FormRecuperarComponent } from './pages/form-recuperar/form-recuperar.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { FormLoginComponent } from './pages/form-login/form-login.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FormLoginComponent } from './form-login/form-login.component';
     FormRecuperarComponent,
     NavbarComponent,
     NotfoundComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    FooterComponent,
+    AboutusComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
