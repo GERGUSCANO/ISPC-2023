@@ -1,15 +1,18 @@
 <h1 align="center">Ar-Salud</h1>
-<p aling="center"> 
+<p align="center"> 
     <a href="https://www.ispc.edu.ar/"><img src="https://www.ispc.edu.ar/wp-content/uploads/2020/09/Isologotipo_ISPC_blanco-transparente-300x200.png" alt="" style="width: 150px"></a>
 </p>
-<h3 aling="center">Instituto Superior Politecnico de Cordoba</h3>
-<h3 aling="center">Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales</h3>
+<h3 align="center">Instituto Superior Politecnico de Cordoba</h3>
+<h3 align="center">Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales</h3>
 <h4 align="center">Cohorte 2022</h4>
 
 
 <p aling="center">
-    <a href="https://github.com/GERGUSCANO/ISPC-2023"><img src="https://drive.google.com/file/d/1NEIb_gezXd_wXehBDvPQ_a7Gyq0CMIDX/view?usp=drive_link" alt="" style="width: 150px;"></a>
-    <h4 aling-item="center">Teams Pampita & Co</h4>
+    <a href="https://github.com/GERGUSCANO/ISPC-2023">
+    ![]("https://drive.google.com/file/d/1NEIb_gezXd_wXehBDvPQ_a7Gyq0CMIDX/view?usp=drive_link")
+    </a>
+    <h4 align="center">Teams Pampita & Co</h4>
+    
 </p>
 
 
