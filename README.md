@@ -6,7 +6,6 @@
 <h3 align="center">Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales</h3>
 <h4 align="center">Cohorte 2022</h4>
 
-
 <p align="center">
     <a href="https://github.com/GERGUSCANO/ISPC-2023">
         Repositorio Ar-Salud Farmacia
