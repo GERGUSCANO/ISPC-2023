@@ -4,9 +4,13 @@
   <div class="col-md-4 col-sm-6">
     <div class="card" style="width: 20rem;">
       <img src="../../assets/imagenes/productos/prod1.png" class="card-img-top img-fluid" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Mascarilla Asepxia carbón</h5>
-        <p class="card-text">Descripción breve del producto.</p>
+
+<!--ToDo: corregir de acuerdo a la api y porbar  -->
+
+      <div class="card-body" *ngFor="let element of medicine">
+        <h5 class="card-title">{{medicine.nombre}}</h5>
+        <p class="card-text">{{medicine.descripcion}}</p>
+        <h4>{{medicine.precio | currency}}</h4>
         <a href="#" class="btn btn-primary">Comprar</a>
       </div>
     </div>

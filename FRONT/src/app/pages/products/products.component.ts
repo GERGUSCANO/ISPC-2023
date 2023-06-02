@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-products',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
+
+  medicine:any;
+
+  constructor( private product:ProductsService ){
+
+    this.product.getProductInfo().subscribe({
+      next:(medicineData) => {
+        this.medicine = medicineData; //asignacion de valor a variable medicine
+      },
+      error:(errorData) => {
+        console.log(errorData);
+      }
+    })
+
+  }
 
 }
