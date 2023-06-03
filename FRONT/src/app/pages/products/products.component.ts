@@ -10,16 +10,17 @@ export class ProductsComponent {
 
   medicine:any;
 
-  constructor( private product:ProductsService ){
+  constructor( private producto:ProductsService )
+  {
 
-    this.product.getProductInfo().subscribe({
+    this.producto.getProductInfo().subscribe({
       next:(medicineData) => {
-        this.medicine = medicineData; //asignacion de valor a variable medicine
+        this.medicine = medicineData //asignacion de valor a variable medicine
       },
       error:(errorData) => {
         console.log(errorData);
       }
-    })
+    });
 
   }
 
