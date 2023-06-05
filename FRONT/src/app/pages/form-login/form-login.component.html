@@ -42,6 +42,9 @@
             <div class="grupo">
                 <input type="Password" id="password" formControlName="password"><span class="barra"></span>
                 <label for="">Contraseña</label>
+                <!-- !bindeamos la variable error declarada en la clase
+                 ! componente. A esta se le asigna errorData -->
+                <p class="text-danger">{{loguinError}}</p>
 
                 <div *ngIf="password.invalid && (password.dirty || password.touched)" class="text-danger">
 
