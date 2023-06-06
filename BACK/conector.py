@@ -4,9 +4,9 @@ try:
     conexion = mysql.connector.connect(
         host = 'localhost',
         port = 3306,
-        user = 'root',
-        password = '',
-        db= ''
+        user = 'german',
+        password = 'Cordoba.23',
+        db= 'arsalud(arsalud)'
     )
     if conexion.is_connected():
         print("la conexion fue exitosa")
