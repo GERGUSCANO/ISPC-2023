@@ -1,0 +1,13 @@
+<h1>PRODUCTOS</h1>
+
+<div class="card-container">
+  <div class="card" *ngFor="let element of medicine">
+    <img [src]="element.img" class="card-img-top img-fluid">
+    <div class="card-body">
+      <h5 class="card-title">{{ element.name }}</h5>
+      <p class="card-text">Precio: {{ element.price | currency }}</p>
+      <p class="card-text">Descripción: {{ element.description }}</p>
+      <a href="#" class="btn btn-primary">Comprar</a>
+    </div>
+  </div>
+</div>
