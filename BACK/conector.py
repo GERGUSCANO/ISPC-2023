@@ -4,8 +4,8 @@ try:
     conexion = mysql.connector.connect(
         host = 'localhost',
         port = 3306,
-        user = 'german',
-        password = 'Cordoba.23',
+        user = 'root',
+        password = '1234',
         db= 'arsalud(arsalud)'
     )
     if conexion.is_connected():
