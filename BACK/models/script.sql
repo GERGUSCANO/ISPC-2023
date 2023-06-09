@@ -4,7 +4,7 @@ create table categoria(
        idcategoria integer primary key auto_increment,
        nombre varchar(50) not null unique,
        descripcion varchar(256) null,
-       estado bit default(1)
+       
 );
 
 
@@ -16,7 +16,6 @@ create table articulo(
        precio_venta decimal(11,2) not null,
        stock integer not null,
        descripcion varchar(256) null,
-       estado bit default(1),
        FOREIGN KEY (idcategoria) REFERENCES categoria(idcategoria)
 );
 
@@ -36,7 +35,7 @@ create table rol(
        idrol integer primary key auto_increment,
        nombre varchar(30) not null,
        descripcion varchar(100) null,
-       estado bit default(1)
+
 );
 
 
@@ -50,7 +49,6 @@ create table usuario(
        telefono varchar(20) null,
        email varchar(50) not null,
        clave int not null,
-       estado bit default(1),
        FOREIGN KEY (idrol) REFERENCES rol (idrol)
 );
 
@@ -105,3 +103,18 @@ create table detalle_venta(
        FOREIGN KEY (idventa) REFERENCES venta (idventa) ON DELETE CASCADE,
        FOREIGN KEY (idarticulo) REFERENCES articulo (idarticulo)
 );
+
+insert into categoria (nombre, descripcion) value ('BELLEZA', 'Pelo, Maquillaje, Electro Belleza, Perfumes y Fragancias');
+insert into categoria (nombre, descripcion) value ('DERMOCOSMETICA', 'Rostro, Corporal, Solar, Solar');
+insert into categoria (nombre, descripcion) value ('CUIDADO PERSONAL', 'Cuidado Oral, Higiene Personal, Adultos');
+insert into categoria (nombre, descripcion) value ('SALUD Y FARMACIAS', 'Medicamentos, Servicios de Salud, Farmacia, Nutricion y Deportes');
+select * from categoria;
+insert into articulo (idcategoria,codigo, nombre, precio_venta, stock, descripcion) value (1,'cod001', 'Maybelline the colossal', 2900, 100, 'Mascara de Pestañas');
+insert into articulo (idcategoria,codigo, nombre, precio_venta, stock, descripcion) value (2, 'cod002', 'L`oreal', 1800, 100, 'Agua misceral');
+insert into articulo (idcategoria,codigo, nombre, precio_venta, stock, descripcion) value (3, 'cod003', 'Plushbell', 500, 100, 'shampoo manzana');
+insert into articulo (idcategoria,codigo, nombre, precio_venta, stock, descripcion) value (4, 'cod004', 'Centrum adulto', 2700, 100, 'Suplemento dietario');
+select * from articulo;
+insert into persona (tipo_persona, nombre, tipo_documento, num_documento, direccion, telefono, email) value ('Empresa','Pampita&Co','CUIT', 0001234, 'Avenida de Mayo 30', 115132412, 'pampita@gmail.com');
+insert into persona (tipo_persona, nombre, tipo_documento, num_documento, direccion, telefono, email) value ('Consumidor final','Romina Haag','DNI', 34541123, 'Avenida Colon 5050', 3515491001, 'RShaag@gmail.com');
+insert into persona (tipo_persona, nombre, tipo_documento, num_documento, direccion, telefono, email) value ('Monotributista','Ivan Sarjanovich','RUT', 123412-3, 'Santiago de Chile', 423123512, 'sarja97@gmail.com.cl');
+select * from persona;
