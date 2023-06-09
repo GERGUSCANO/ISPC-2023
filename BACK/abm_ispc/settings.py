@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'abm_ispc.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'abm_ispc',
+        'NAME': 'arsalud',
         'USER': 'root',
         'PASSWORD': 'admin123',
         'HOST':'localhost',
         'PORT': '3306',
-        'OPTIONS' {
+        'OPTIONS': {
             'sql_mode': 'traditional'
         }
     }
