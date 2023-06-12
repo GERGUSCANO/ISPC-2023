@@ -77,14 +77,12 @@ WSGI_APPLICATION = 'GermanProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'DB-arsalud',
+        'NAME': 'arsalud',
         'USER': 'root',
         'PASSWORD': "1234",
         'HOST':'localhost',
         'PORT': '3306',
-        'OPTIONS':{
-            'sql_mode': 'traditional'
-        }
+        
     }
 }
 
@@ -111,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
