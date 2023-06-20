@@ -1,9 +1,54 @@
 from django.db import models
 from datetime import datetime
 from django.utils import timezone
-
+from django.contrib.auth.models import AbstractUser, BaseUserManager
 now = timezone.now()
 
+class CustomUserManager(BaseUserManager):
+    """
+    Gestor de modelos de usuario personalizado donde el correo electrónico es el identificador único
+    para la autenticación en lugar de los nombres de usuario.
+    """
+    def create_user(self, email, password, **extra_fields):
+        """
+        Crear y guardar un usuario con el correo electrónico y la contraseña dados.
+        """
+        if not email:
+            raise ValueError(_("The Email must be set"))
+        email = self.normalize_email(email)
+        user = self.model(email=email, **extra_fields)
+        user.set_password(password)
+        user.save()
+        return user
+
+    def create_superuser(self, email, password, **extra_fields):
+        """
+        Crea y guarda un SuperUsuario con el email y contraseña dados.
+        """
+        extra_fields.setdefault("is_staff", True)
+        extra_fields.setdefault("is_superuser", True)
+        extra_fields.setdefault("is_active", True)
+
+        if extra_fields.get("is_staff") is not True:
+            raise ValueError(_("Superuser must have is_staff=True."))
+        if extra_fields.get("is_superuser") is not True:
+            raise ValueError(_("Superuser must have is_superuser=True."))
+        return self.create_user(email, password, **extra_fields)
+    
+
+#realiza el handle del login e interactua con la DB
+class CustomUser(AbstractUser):
+    username = None
+    email = models.EmailField(("email address"), unique=True)
+
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = []
+
+    objects = CustomUserManager()
+
+    def __str__(self):
+        return self.email
+    
 
 class ROL (models.Model):
     idrol= models.AutoField(primary_key=True)
