@@ -38,10 +38,6 @@ class LogoutView(APIView):
         #devolvemos la respuesta al cliente
         return Response(status=status.HTTP_200_OK)
     
-class articulosViewSet(viewsets.ModelViewSet):
-    queryset= Articulos.objects.all()
-    serializer_class= ArticulosSerializer   
-
 class SignupView(generics.CreateAPIView):
     serializer_class = UserSerializer  
 
@@ -70,5 +66,45 @@ class UsersList(generics.ListCreateAPIView):
         if self.request.user.is_authenticated:
             return Response(serializer.data)
         
+
+class RolViewSet(viewsets.ModelViewSet):
+    queryset=ROL.objects.all()
+    serializer_class=RolSerializer
+
+class EstadoViewSet(viewsets.ModelViewSet):
+    queryset=Estados.objects.all()
+    serializer_class=EstadosSerializer
+
+class ProveedoresViewSet(viewsets.ModelViewSet):
+    queryset=Proveedores.objects.all()
+    serializer_class=ProveedoresSerializer
+
+class IngresoViewSet(viewsets.ModelViewSet):
+    queryset=Ingreso.objects.all()
+    serializer_class=IngresoSerializer
+
+class OrdenViewSet(viewsets.ModelViewSet):
+    queryset=Orden.objects.all()
+    serializer_class=OrdenSerializer
+
+class CategoriaViewSet(viewsets.ModelViewSet):
+    queryset=Categoria.objects.all()
+    serializer_class=CategoriaSerializer
+
+class EnvioViewSet(viewsets.ModelViewSet):
+    queryset=Envio.objects.all()
+    serializer_class=EnvioSerializer
+
+class ArticulosViewSet(viewsets.ModelViewSet):
+    queryset=Articulos.objects.all()
+    serializer_class=ArticulosSerializer
+
+class DetalleVentaViewSet(viewsets.ModelViewSet):
+    queryset=DetalleVenta.objects.all()
+    serializer_class=DetalleVentaSerializer
+
+class DetalleIngresoViewSet(viewsets.ModelViewSet):
+    queryset=DetalleIngreso.objects.all()
+    serializer_class=DetalleIngresosSerializer
         
 

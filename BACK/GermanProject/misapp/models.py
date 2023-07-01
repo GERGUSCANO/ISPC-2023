@@ -28,7 +28,7 @@ class Estados (models.Model):
         verbose_name_plural="Estados"
 
     def __str__(self):
-        return self.idestados + self.detalle
+        return self.idestados
 
 class CustomUser(AbstractUser):
     id_usuario = models.AutoField (primary_key=True, blank=False) 
@@ -41,7 +41,7 @@ class CustomUser(AbstractUser):
     idestados=models.ForeignKey(Estados, to_field="idestados", on_delete=models.CASCADE)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'password', 'is_staff']
+    REQUIRED_FIELDS = ['username', 'password']
 
     class Meta:
         db_table = "CustomUser"
