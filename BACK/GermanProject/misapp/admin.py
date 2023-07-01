@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import USUARIOS, ROL,Articulos,Categoria,estados,Proveedores,Ingreso,Orden,Envio,detalleingreso,detalleVenta
+from .models import CustomUser, ROL,Articulos,Categoria,Estados,Proveedores,Ingreso,Orden,Envio,DetalleIngreso,DetalleVenta
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth import get_user_model
 
@@ -9,11 +9,9 @@ from django.contrib.auth import get_user_model
 class CustomUserAdmin(UserAdmin):
     pass
 
+
 class ROLADMIN(admin.ModelAdmin):
     list_display=["idrol","detalle"]
-
-class USUARIOADMIN(admin.ModelAdmin):
-    list_display=('nombre','idrol')
 
 class CategoriaADMIN(admin.ModelAdmin):
     list_display=('idcategoria','nombre','descripcion')
@@ -21,7 +19,7 @@ class CategoriaADMIN(admin.ModelAdmin):
 class ArticulosADMIN(admin.ModelAdmin):
     list_display=('idarticulo', 'nombre', 'descripcion', 'precio', 'stock', 'imagen','precio','idcategoria')
 
-class estadosADMIN(admin.ModelAdmin):
+class EstadosADMIN(admin.ModelAdmin):
     list_display=('idestados', 'detalle')
 
 class ProveedoresADMIN(admin.ModelAdmin):
@@ -36,22 +34,21 @@ class OrdenADMIN(admin.ModelAdmin):
 class EnvioADMIN(admin.ModelAdmin):
     list_display=('idenvio','descripcion','direccion_envio', 'fecha', 'cod_seguimiento', 'orden','estado')
 
-class detalleVentaADMIN(admin.ModelAdmin):
+class DetalleVentaADMIN(admin.ModelAdmin):
     list_display=('iddetalle','cantidad','precio', 'descuento', 'articulo', 'orden')    
 
-class detalleIngresoADMIN(admin.ModelAdmin):
+class DetalleIngresoADMIN(admin.ModelAdmin):
     list_display=('iddetalle','cantidad', 'descripcion')    
 
 
 admin.site.register(ROL, ROLADMIN)
-admin.site.register(USUARIOS, USUARIOADMIN)
-admin.site.register(Categoria,CategoriaADMIN)
+admin.site.register(Categoria, CategoriaADMIN)
 admin.site.register(Articulos, ArticulosADMIN)
-admin.site.register(estados, estadosADMIN)
+admin.site.register(Estados, EstadosADMIN)
 admin.site.register(Proveedores, ProveedoresADMIN)
 admin.site.register(Ingreso, IngresosADMIN)
 admin.site.register(Orden, OrdenADMIN)
 admin.site.register(Envio, EnvioADMIN)
-admin.site.register(detalleingreso, detalleIngresoADMIN)
-admin.site.register(detalleVenta, detalleVentaADMIN)
+admin.site.register(DetalleIngreso, DetalleIngresoADMIN)
+admin.site.register(DetalleVenta, DetalleVentaADMIN)
 

@@ -1,80 +1,57 @@
 from django.db import models
 from datetime import datetime
 from django.utils import timezone
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group, Permission
 
 now = timezone.now()
-
-
-class CustomUser(AbstractUser):
-    id_usuario = models.AutoField (
-        primary_key=True, 
-        blank=False
-    ) 
-
-    email = models.EmailField(
-        max_length=150, 
-        unique=True)
-    
-    tipo_dni= models.CharField(
-        max_length=10, blank=False)
-    
-    numero_dni= models.IntegerField(
-        blank=False)
-    
-    direccion= models.TextField(
-        max_length=100, 
-        default="direccion",blank=False)
-    
-    telefono= models.IntegerField(
-        blank=False)
-    
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'password', 'is_staff']
-    
-
 
 
 class ROL (models.Model):
     idrol= models.AutoField(primary_key=True)
     detalle= models.CharField(max_length=20, default="detalle",blank=False)
 
-    class meta:
+    class Meta:
         db_table = "Roles"
-        verbase_name = "rol"
-        verbase_name_plural= "roles"
+        verbose_name = "rol"
+        verbose_name_plural= "roles"
     
     def __str__(self):
         return self.detalle
 
-class estados (models.Model):
+class Estados (models.Model):
     idestados=models.IntegerField(primary_key=True, blank=False)
     detalle=models.CharField(max_length=20, blank=False)
 # Aca se agregaran los diferentes estados de todas las tablas 1. enviado, 2. pendiente, 3. cancelado, 4. alta, 5. baja
-    class meta:
+    class Meta:
         db_table="Estados"
-        verbase_name= "estado"
-        verbase_name_plural="estados"
+        verbose_name= "Estado"
+        verbose_name_plural="Estados"
 
     def __str__(self):
         return self.idestados + self.detalle
 
-"""class USUARIOS(models.Model):
-    id_usuario = models.AutoField (primary_key=True, blank=False)
-    nombre = models.CharField(max_length=20, blank=False)
-    tipo_dni= models.CharField(max_length=10, blank=False)
-    numero_dni= models.IntegerField(blank=False)
-    direccion= models.TextField(max_length=100, default="direccion",blank=False)
-    telefono= models.IntegerField(blank=False)
+class CustomUser(AbstractUser):
+    id_usuario = models.AutoField (primary_key=True, blank=False) 
+    email = models.EmailField(max_length=150, unique=True)
+    tipo_dni= models.CharField(max_length=10, blank=True)
+    numero_dni= models.IntegerField(blank=True)
+    direccion= models.TextField(max_length=100, default="direccion",blank=True)
+    telefono= models.IntegerField(blank=True)
     idrol = models.ForeignKey (ROL, to_field= 'idrol', on_delete=models.CASCADE)
-    idestados=models.ForeignKey(estados, to_field="idestados", on_delete=models.CASCADE)
-    class meta:
-        db_table = "Usuarios"
-        verbase_name = "usuario"
-        verbase_name_plural= "usuarios"
+    idestados=models.ForeignKey(Estados, to_field="idestados", on_delete=models.CASCADE)
+
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username', 'password', 'is_staff']
+
+    class Meta:
+        db_table = "CustomUser"
+        verbose_name = "CustomUser"
+        verbose_name_plural= "CustomsUsers"
     
     def __str__(self):
-        return self.nombre"""
+        return self.id_usuario
+
+
 
 class Proveedores (models.Model):
     idproveedor=models.AutoField(primary_key=True)
@@ -85,10 +62,10 @@ class Proveedores (models.Model):
     telefono=models.IntegerField(blank=False)
     email=models.CharField(max_length=50, blank=False)
     
-    class meta:
+    class Meta:
         db_table = "Proveedores"
-        verbase_name = "proveedor"
-        verbase_name_plural= "proveedores"
+        verbose_name = "Proveedor"
+        verbose_name_plural= "Proveedores"
     
     def __str__(self):
         return self.nombre
@@ -101,12 +78,12 @@ class Ingreso(models.Model):
     numeroComprobante= models.IntegerField(blank=False, default=0)
     fecha = models.DateTimeField(default=timezone.now)
     total=models.DecimalField(max_length=10, max_digits=10, decimal_places=2, blank=False)
-    estado=models.ForeignKey(estados, to_field="idestados", on_delete=models.CASCADE)
+    estado=models.ForeignKey(Estados, to_field="idestados", on_delete=models.CASCADE)
 
-    class meta:
+    class Meta:
         db_table = "Ingresos"
-        verbase_name = "Ingreso"
-        verbase_name_plural= "ingresos"
+        verbose_name = "Ingreso"
+        verbose_name_plural= "Ingresos"
     
     def __str__(self):
         return self.idingreso + self.total
@@ -120,25 +97,25 @@ class Orden(models.Model):
     fecha = models.DateTimeField(default=timezone.now)
     impuesto=models.DecimalField (max_length=10, max_digits=10, decimal_places=2, blank=False)
     total=models.DecimalField(max_length=10, max_digits=10, decimal_places=2, blank=False)
-    estado= models.ForeignKey(estados, to_field="idestados", on_delete=models.CASCADE)
+    estado= models.ForeignKey(Estados, to_field="idestados", on_delete=models.CASCADE)
 
-    class meta:
+    class Meta:
         db_table="Orden"
-        verbase_name= "Orden"
-        verbase_name_plural="Ordenes"
+        verbose_name= "Orden"
+        verbose_name_plural="Ordenes"
 
     def __str__(self):
-        return self.nombre
+        return self.idorden
 
 class Categoria(models.Model):
     idcategoria = models.AutoField(primary_key=True, blank=False)
     nombre = models.CharField(max_length=50, blank=False)
     descripcion=models.TextField()
     
-    class meta:
+    class Meta:
         db_table="Categoria"
-        verbase_name= "categoria"
-        verbase_name_plural="categorias"
+        verbose_name= "Categoria"
+        verbose_name_plural="Categorias"
 
     def __str__(self):
         return self.nombre
@@ -150,12 +127,12 @@ class Envio(models.Model):
     fecha = models.DateTimeField(default=timezone.now)
     cod_seguimiento=models.IntegerField(default=0)
     orden=models.ForeignKey(Orden, to_field="idorden", on_delete=models.CASCADE)
-    estado=models.ForeignKey(estados, to_field="idestados", on_delete=models.CASCADE)
+    estado=models.ForeignKey(Estados, to_field="idestados", on_delete=models.CASCADE)
 
-    class meta:
+    class Meta:
         db_table="Envio"
-        verbase_name= "envio"
-        verbase_name_plural="envios"
+        verbose_name= "Envio"
+        verbose_name_plural="Envios"
 
     def __str__(self):
         return self.idenvio + self.orden
@@ -170,15 +147,15 @@ class Articulos(models.Model):
     precio= models.DecimalField(max_length=10, max_digits=10 ,decimal_places=2, blank=False )
     idcategoria=models.ForeignKey(Categoria, to_field="idcategoria", on_delete=models.CASCADE)
 
-    class meta:
+    class Meta:
         db_table="Articulos"
-        verbase_name= "Articulo"
-        verbase_name_plural="Articulos"
+        verbose_name= "Articulo"
+        verbose_name_plural="Articulos"
 
     def __str__(self):
         return self.nombre
 
-class detalleVenta(models.Model):
+class DetalleVenta(models.Model):
     iddetalle=models.AutoField(primary_key=True, blank=False)
     cantidad=models.IntegerField(blank=False)
     precio= models.DecimalField(max_length=10, max_digits=10, decimal_places=2, blank=False )
@@ -186,23 +163,23 @@ class detalleVenta(models.Model):
     articulo=models.ForeignKey(Articulos, to_field="idarticulo", on_delete=models.CASCADE)
     orden= models.ForeignKey(Orden, to_field="idorden", on_delete=models.CASCADE)
 
-    class meta:
+    class Meta:
         db_table="DetallesVenta"
-        verbase_name= "detalle_venta"
-        verbase_name_plural="detalles_ventas"
+        verbose_name= "Detalle_Venta"
+        verbose_name_plural="Detalles_Ventas"
 
     def __str__(self):
         return self.iddetalle
     
-class detalleingreso(models.Model):
+class DetalleIngreso(models.Model):
     iddetalle=models.AutoField(primary_key=True, blank=False)
     cantidad=models.IntegerField(blank=False)
     descripcion= models.TextField()
     
-    class meta:
+    class Meta:
         db_table="DetalleIngresos"
-        verbase_name= "Detalle_Ingreso"
-        verbase_name_plural="DetallesdeIngresos"
+        verbose_name= "Detalle_Ingreso"
+        verbose_name_plural="Detalles_de_Ingresos"
 
     def __str__(self):
         return self.iddetalle

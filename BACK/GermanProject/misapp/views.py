@@ -40,7 +40,7 @@ class LogoutView(APIView):
     
 class articulosViewSet(viewsets.ModelViewSet):
     queryset= Articulos.objects.all()
-    serializer_class= ArticuloSerializer    
+    serializer_class= ArticulosSerializer   
 
 class SignupView(generics.CreateAPIView):
     serializer_class = UserSerializer  
