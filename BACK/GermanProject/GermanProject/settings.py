@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'GermanProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'arsaludfarmacia',
+        'NAME': 'Farmacia1',
         'USER': 'root',
-        'PASSWORD': "Arsalud123#!",
+        'PASSWORD': "1234",
         'HOST':'localhost',
         'PORT': '3306',
         
