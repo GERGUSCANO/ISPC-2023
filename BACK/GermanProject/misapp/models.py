@@ -1,8 +1,38 @@
 from django.db import models
 from datetime import datetime
 from django.utils import timezone
+from django.contrib.auth.models import AbstractUser
 
 now = timezone.now()
+
+
+class CustomUser(AbstractUser):
+    id_usuario = models.AutoField (
+        primary_key=True, 
+        blank=False
+    ) 
+
+    email = models.EmailField(
+        max_length=150, 
+        unique=True)
+    
+    tipo_dni= models.CharField(
+        max_length=10, blank=False)
+    
+    numero_dni= models.IntegerField(
+        blank=False)
+    
+    direccion= models.TextField(
+        max_length=100, 
+        default="direccion",blank=False)
+    
+    telefono= models.IntegerField(
+        blank=False)
+    
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username', 'password', 'is_staff']
+    
+
 
 
 class ROL (models.Model):
@@ -29,15 +59,13 @@ class estados (models.Model):
     def __str__(self):
         return self.idestados + self.detalle
 
-class USUARIOS(models.Model):
+"""class USUARIOS(models.Model):
     id_usuario = models.AutoField (primary_key=True, blank=False)
     nombre = models.CharField(max_length=20, blank=False)
     tipo_dni= models.CharField(max_length=10, blank=False)
     numero_dni= models.IntegerField(blank=False)
     direccion= models.TextField(max_length=100, default="direccion",blank=False)
     telefono= models.IntegerField(blank=False)
-    email = models.CharField(max_length=50, blank=False)
-    contraseña = models.IntegerField(blank=False)
     idrol = models.ForeignKey (ROL, to_field= 'idrol', on_delete=models.CASCADE)
     idestados=models.ForeignKey(estados, to_field="idestados", on_delete=models.CASCADE)
     class meta:
@@ -46,7 +74,7 @@ class USUARIOS(models.Model):
         verbase_name_plural= "usuarios"
     
     def __str__(self):
-        return self.nombre
+        return self.nombre"""
 
 class Proveedores (models.Model):
     idproveedor=models.AutoField(primary_key=True)
@@ -85,7 +113,7 @@ class Ingreso(models.Model):
      
 class Orden(models.Model):
     idorden=models.AutoField(primary_key=True, blank=False)
-    usuario=models.ForeignKey(USUARIOS, to_field="id_usuario", on_delete=models.CASCADE)
+    usuario=models.ForeignKey(CustomUser, to_field="id_usuario", on_delete=models.CASCADE)
     tipoComprobante= models.CharField(max_length=20, blank=False)
     serieComprobante= models.CharField(max_length=10, blank=False)
     numeroComprobante= models.IntegerField(blank=False, default=0)
@@ -138,7 +166,7 @@ class Articulos(models.Model):
     descripcion= models.TextField(max_length=100)
     precio= models.DecimalField(max_digits=10, blank=False, decimal_places=2, max_length=10)
     stock= models.IntegerField(blank=False, default=0)
-    imagen= models.CharField(max_length=200)
+    imagen= models.URLField()
     precio= models.DecimalField(max_length=10, max_digits=10 ,decimal_places=2, blank=False )
     idcategoria=models.ForeignKey(Categoria, to_field="idcategoria", on_delete=models.CASCADE)
 
