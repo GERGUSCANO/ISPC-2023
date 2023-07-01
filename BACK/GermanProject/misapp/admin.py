@@ -1,18 +1,13 @@
 from django.contrib import admin
-from .models import USUARIOS
-from .models import ROL
-from .models import Articulos
-from .models import Categoria
-from .models import estados
-from .models import Proveedores
-from .models import Ingreso
-from .models import Orden
-from .models import Envio
-from .models import detalleVenta
-from .models import detalleingreso
+from .models import USUARIOS, ROL,Articulos,Categoria,estados,Proveedores,Ingreso,Orden,Envio,detalleingreso,detalleVenta
+from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth import get_user_model
 
 
 
+@admin.register(get_user_model())
+class CustomUserAdmin(UserAdmin):
+    pass
 
 class ROLADMIN(admin.ModelAdmin):
     list_display=["idrol","detalle"]
