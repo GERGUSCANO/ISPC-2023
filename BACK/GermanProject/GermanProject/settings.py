@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
+from rest_framework.settings import api_settings
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_rest_passwordreset',
     'corsheaders',
+    'knox',
     'misapp',
 ]
 
@@ -83,9 +86,11 @@ WSGI_APPLICATION = 'GermanProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Farmacia1',
-        'USER': 'root',
-        'PASSWORD': "1234",
+        'NAME': 'farmacia2',
+         #'NAME': 'Farmacia1',
+        'USER':'root',
+        #'PASSWORD': "1234",
+        'PASSWORD': "Farmacia1!",
         'HOST':'localhost',
         'PORT': '3306',
         'OPTIONS': {
@@ -139,12 +144,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Custom user model
 
-AUTH_USER_MODEL = "misapp.CustomUser"
+#AUTH_USER_MODEL = "misapp.User"
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+        'knox.auth.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
 
@@ -155,6 +160,17 @@ REST_FRAMEWORK = {
     ]
   
 }
+
+REST_KNOX = {
+    'SECURE_HASH_ALGORITHM':'cryptography.hazmat.primitives.hashes.SHA512',
+    'AUTH_TOKEN_CHARACTER_LENGTH': 64, # By default, it is set to 64 characters (this shouldn't need changing).
+    'TOKEN_TTL': timedelta(minutes=45), # The default is 10 hours i.e., timedelta(hours=10)).
+    'USER_SERIALIZER': 'knox.serializers.UserSerializer',
+    'TOKEN_LIMIT_PER_USER': None, # By default, this option is disabled and set to None -- thus no limit.
+    'AUTO_REFRESH': False, # This defines if the token expiry time is extended by TOKEN_TTL each time the token is used.
+    'EXPIRY_DATETIME_FORMAT': api_settings.DATETIME_FORMAT,
+}
+
 CORS_ORIGIN_WHITELIST = ['http://localhost','http://localhost:4200',]
 
 CORS_ALLOW_CREDENTIALS = True

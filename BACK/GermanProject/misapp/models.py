@@ -5,7 +5,6 @@ from django.contrib.auth.models import AbstractUser, Group, Permission
 
 now = timezone.now()
 
-
 class ROL (models.Model):
     idrol= models.AutoField(primary_key=True)
     detalle= models.CharField(max_length=20, default="detalle",blank=False)
@@ -29,29 +28,6 @@ class Estados (models.Model):
 
     def __str__(self):
         return self.idestados
-
-class CustomUser(AbstractUser):
-    id_usuario = models.AutoField (primary_key=True, blank=False) 
-    email = models.EmailField(max_length=150, unique=True)
-    tipo_dni= models.CharField(max_length=10, blank=True)
-    numero_dni= models.IntegerField(blank=True)
-    direccion= models.TextField(max_length=100, default="direccion",blank=True)
-    telefono= models.IntegerField(blank=True)
-    idrol = models.ForeignKey (ROL, to_field= 'idrol', on_delete=models.CASCADE)
-    idestados=models.ForeignKey(Estados, to_field="idestados", on_delete=models.CASCADE)
-
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'password']
-
-    class Meta:
-        db_table = "CustomUser"
-        verbose_name = "CustomUser"
-        verbose_name_plural= "CustomsUsers"
-    
-    def __str__(self):
-        return self.id_usuario
-
-
 
 class Proveedores (models.Model):
     idproveedor=models.AutoField(primary_key=True)
@@ -90,7 +66,7 @@ class Ingreso(models.Model):
      
 class Orden(models.Model):
     idorden=models.AutoField(primary_key=True, blank=False)
-    usuario=models.ForeignKey(CustomUser, to_field="id_usuario", on_delete=models.CASCADE)
+    #id_usuario=models.ForeignKey(userSerializer, to_field="id_usuario", on_delete=models.CASCADE)
     tipoComprobante= models.CharField(max_length=20, blank=False)
     serieComprobante= models.CharField(max_length=10, blank=False)
     numeroComprobante= models.IntegerField(blank=False, default=0)

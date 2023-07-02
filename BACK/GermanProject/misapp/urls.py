@@ -1,18 +1,43 @@
 from django.urls import path, include
 from .views import * 
+from knox import views as knox_views
+
 
 urlpatterns = [
    
     #Auth views
+    path(
+        'create/', 
+        CreateUserView.as_view(), 
+        name="create"
+    ),
     
-     path('auth/login/',
-         LoginView.as_view(), name='auth/login'),
+    path(
+        'profile/', 
+        ManageUserView.as_view(), 
+        name='profile'
+    ),
 
-     path('auth/logout/',
-         LogoutView.as_view(), name='auth/logout'),
+    path(
+        'login/',
+        LoginAPI.as_view(), 
+        name='login'
+    ),
 
-     path('auth/signup/',
-         SignupView.as_view(), name='auth/signup'),
+    path(
+        'logout/',
+         LogoutView.LogoutApi.as_view(), 
+         name='logout'
+    ),
+    
+    path(
+        'logoutall/',
+        LogoutAllView.RegisterApi.as_view(), 
+        name='logoutall'
+    ),
+
+    #  path('signup/',
+    #      SignupView.RegisterApi.as_view(), name='signup'),
 
      path('user/profile/',
         ProfileView.as_view(), name='user_profile'),

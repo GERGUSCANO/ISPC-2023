@@ -1,11 +1,24 @@
+#django imports
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
-from rest_framework import status, viewsets, generics
-from rest_framework.response import Response
-from rest_framework.views import APIView
-from rest_framework.permissions import IsAdminUser, IsAuthenticated, AllowAny
+#rest framework import
+from rest_framework import response
+from rest_framework import authentication, generics, permissions
+from rest_framework.settings import api_settings
+from rest_framework.authtoken.serializers import AuthTokenSerializer
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
+#knox import
+from knox.views import Loginview as KnoxLoginView
+from knox.auth import TokenAuthentication
+
+#local import
 from .serializer import *
 from .models import *
+
+#local apps import
+from core.serializers import UserSerializer, AuthSerializer
+
+from rest_framework.authentication import SessionAuthentication
 
 # Create your views here.
 
@@ -14,32 +27,70 @@ permissions_classes = [IsAdminUser]
 def home(request):
     return render(request, 'main-page.component.html')
 
-class LoginView(APIView):
-    def post(self, request):
-        #recuperamos las credenciales y las autenticamos al user
-        email= request.data.get('email', None)
-        password= request.data.get('password', None)
-        user= authenticate(email=email, password=password)
+class CreateUserView(generics.CreateAPIView):
+    # Create user API view
+    serializer_class = UserSerializer
 
-        #si es correcto añadimos a la request la info de la sesion
-        if user:
-            
-            login(request,user)
-            return Response(status=status.HTTP_200_OK)
-        
-        #si no es correcto devolvemos un codigo de error
-        return Response(status=status.HTTP_404_NOT_FOUND)
+class Signup(generics.GenericAPIView):
+    serializer_class= RegisterSerializer
+    def post(self,request,*args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        return response({
+        "user": UserSerializer(user, context=self.get_serializer_context()).data,
+        "token": AuthToken.objects.create(user)[1]
+        })
+
+class LoginAPI(KnoxLoginView):
+    permission_classes = (permissions.AllowAny,)
+
+    def post(self, request, format=None):
+        serializer = AuthTokenSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data['user']
+        login(request, user)
+        return super(LoginAPI, self).post(request, format=None)
     
+class ManageUserView(generics.RetrieveUpdateAPIView):
+    'Gestionar el usuario autenticado'
+    serializer_class = UserSerializer
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get_object(self):
+        'Recuperar y devolver el usuario autenticado'
+        return self.request.user
+
 class LogoutView(APIView):
-    def post(self, request):
-        #borramos de la request la informaicon de sesion
-        logout(request)
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
 
-        #devolvemos la respuesta al cliente
-        return Response(status=status.HTTP_200_OK)
-    
-class SignupView(generics.CreateAPIView):
-    serializer_class = UserSerializer  
+    def post(self, request, format=None):
+        request._auth.delete()
+        user_logged_out.send(
+            sender=request.user.__class__,
+            request=request, user=request.user
+        )
+        return response(
+            None, 
+            status=status.HTTP_204_NO_CONTENT
+        )
+
+
+class LogoutAllView(APIView):
+    '''
+    Log the user out of all sessions
+    I.E. deletes all auth tokens for the user
+    '''
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request, format=None):
+        request.user.auth_token_set.all().delete()
+        user_logged_out.send(sender=request.user.__class__,
+                             request=request, user=request.user)
+        return response(None, status=status.HTTP_204_NO_CONTENT)
+
 
 class ProfileView(generics.RetrieveUpdateAPIView):
     permission_classes = [IsAuthenticated] #Solo usuarios logueados pueden ver.
@@ -52,11 +103,11 @@ class ProfileView(generics.RetrieveUpdateAPIView):
         serializer = UserSerializer(data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return response(serializer.data, status=status.HTTP_201_CREATED)
+        return response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class UsersList(generics.ListCreateAPIView):
-    queryset = CustomUser.objects.all()
+    queryset = UserSerializer.objects.all()
     serializer_class = UserSerializer
     http_method_names = ['get']
     permission_classes = [IsAdminUser]
@@ -64,7 +115,7 @@ class UsersList(generics.ListCreateAPIView):
         queryset = self.get_queryset()
         serializer = UserSerializer(queryset, many=True)
         if self.request.user.is_authenticated:
-            return Response(serializer.data)
+            return response(serializer.data)
         
 
 class RolViewSet(viewsets.ModelViewSet):

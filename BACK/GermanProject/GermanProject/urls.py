@@ -5,8 +5,8 @@ from  misapp import views
 
 
 routers= routers.DefaultRouter()
-routers.register(r'ROL', views.RolViewSet, "rol")
-routers.register(r'Estados', views.EstadoViewSet, "estados")
+# routers.register(r'ROL', views.RolViewSet, "rol")
+# routers.register(r'Estados', views.EstadoViewSet, "estados")
 routers.register(r'Proveedores', views.ProveedoresViewSet, "proveedores")
 routers.register(r'Ingreso', views.IngresoViewSet, "ingreso")
 routers.register(r'Orden', views.OrdenViewSet, "orden")
