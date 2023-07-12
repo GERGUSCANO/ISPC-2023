@@ -86,7 +86,8 @@ WSGI_APPLICATION = 'arsalud.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "arsalud_farmacia",
+        #"NAME": "arsalud_farmacia",
+        "NAME": "arsalud_farmacia_v2",
         "USER": "root",
         "PASSWORD": "1234",
         "HOST": "localhost",
