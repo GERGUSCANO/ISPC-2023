@@ -1,0 +1,46 @@
+{
+  "productos":[
+      { "id": "Mascarillas",
+      "name": "Asepxia",
+      "description": "Mascarilla antiacne",
+      "price": 1500,
+      "img": "../../../assets/imagenes/productos/prod1.png"
+    },
+
+      {
+          "id":"Farmacos",
+          "name": "Tafirol Forte",
+          "description": "Comprimidos x 30",
+          "price": 500,
+          "img": "../../../assets/imagenes/productos/prod2.jpg"
+      },
+      {
+          "id": "Farmacos",
+          "name": "Aspirina Prevent 325",
+          "description":"Comprimidos x 30",
+          "price": 600,
+          "img": "../../../assets/imagenes/productos/prod3.jpeg"
+      },
+      {
+          "id": "Antialergico",
+          "name": "Aerotina Pediatrico",
+          "description":"Jarabe x 60 ml",
+          "price": 1593.6,
+          "img": "../../../assets/imagenes/productos/prod4.jpg"
+      },
+      {
+          "id": "Farmacos",
+          "name": "Actron 400 mg ",
+          "description":"Comprimidos x 30",
+          "price": 800,
+          "img": "../../../assets/imagenes/productos/prod5.jpg"
+      },
+      {
+          "id": "Farmacos",
+          "name": "Buscapina Fem",
+          "description":"Comprimidos x 20",
+          "price": 400,
+          "img": "../../../assets/imagenes/productos/prod6.jpg"
+      }
+  ]
+}

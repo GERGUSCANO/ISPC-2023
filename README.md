@@ -38,3 +38,7 @@ Es una Web desarrollada en el ámbito de comercio para la Salud esencialmente co
 * Django
 * Django Restframework
 * MySql
+
+
+<h4>NOTAS IMPORTANTES</h4>
+<p>Aqui veremos el uso de Git para angular y como iniciar un entorno virtual desde cero en banckend como asi tambien de como iniciar un proyecto desde Django para mas info <a href="https://github.com/GERGUSCANO/ISPC-2023/wiki/%C2%A1IMPORTANTE!">aqui</a></p>

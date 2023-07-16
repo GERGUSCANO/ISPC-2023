@@ -53,11 +53,14 @@ body{
 .card-container{
   border-top: 3px solid #411d3fcc;
   border-bottom: 3px solid #411d3fcc;
+  width: 100%;
 }
 
 .card{
   margin: 30px 20px 30px 30px;
   box-shadow: 0 0 6px 0 #411d3fcc;
+  height: 400px;
+  width: 100%;
 }
 
 .advice-container{
